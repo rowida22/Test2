@@ -52,7 +52,7 @@ public class test {
 
         driver.navigate().to("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
         driver.switchTo().frame("packageFrame");
-        driver.findElement(By.linkText("Alert")).click();
+        driver.findElement(By.linkText("ActiveSession")).click();
 
         // driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
         // WebElement frame = driver.findElement(By.name("packageFrame"));
