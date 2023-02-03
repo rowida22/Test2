@@ -2,6 +2,7 @@ package TestDemo;
 
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -21,20 +22,29 @@ public class test {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
         driver.get("https://google.com/");
+        String firstTab = driver.getWindowHandle(); // Switching
         driver.navigate().to("https://facebook.com/");
-        /* Add Some Action and print it in terminal 
+        /*
+         * Add Some Action and print it in terminal
          * getURL , print title and other navigation
-        */
+         */
         System.out.println(driver.getCurrentUrl());
         System.out.println(driver.getTitle());
 
         driver.navigate().back();
         Thread.sleep(2000);
-        
+
         driver.navigate().forward();
         Thread.sleep(2000);
         driver.navigate().refresh();
-        
+
+        /*
+         * Swithing to the original tabs
+         * open it in new tab or window
+         */
+        driver.switchTo().window(firstTab);
+        driver.switchTo().newWindow(WindowType.TAB);
+
         Thread.sleep(2000);
         driver.close();
 
