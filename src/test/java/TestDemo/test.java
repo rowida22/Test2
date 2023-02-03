@@ -8,6 +8,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class test {
 
     public static void main(String[] args) {
+        /*
+         * Simple openning & close a site with implicit time
+         * Add some Actions
+         */
 
         WebDriverManager.chromedriver().driverVersion("109.0.5414.74").setup();
         WebDriver driver = new ChromeDriver();
@@ -16,7 +20,10 @@ public class test {
         driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
-        driver.get("https://facebook.com/");
+        driver.get("https://google.com/");
+        driver.navigate().to("https://facebook.com/");
+        System.out.println(driver.getCurrentUrl());
+        System.out.println(driver.getTitle());
 
         driver.close();
 
