@@ -16,7 +16,7 @@ import osgl.version.Versioned;
  * press F5 in the browser to watch the immediate change
  * in the browser!
  */
-@SuppressWarnings("unused")
+@SuppressWarnings("used")
 @Versioned
 public class AppEntry {
 

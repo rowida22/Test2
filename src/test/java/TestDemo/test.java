@@ -3,14 +3,13 @@ package TestDemo;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class test {
 
     public static void main(String[] args) {
 
-        // System.setProperty("webdriver.chrome.driver",
-        // "I:\\Test2\\Test2\\.\\driver\\chromedriver.exe");
-
+        WebDriverManager.chromedriver().driverVersion("109.0.5414.74").setup();
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

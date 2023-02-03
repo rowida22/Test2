@@ -11,6 +11,7 @@
   <name>My Awesome Application</name>
 
   <parent>
+    <?m2e execute onConfiguration?>
     <groupId>org.actframework</groupId>
     <artifactId>act-starter-parent</artifactId>
     <version>1.9.2.0</version>
