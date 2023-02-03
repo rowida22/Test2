@@ -54,14 +54,11 @@ public class test {
         driver.switchTo().frame("packageFrame");
         driver.findElement(By.linkText("ActiveSession")).click();
 
-        // driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
-        // WebElement frame = driver.findElement(By.name("packageFrame"));
-        // driver.switchTo().frame(frame);
-        // Thread.sleep(1000);
-        // driver.findElement(By.linkText("Action")).click();
-        // Thread.sleep(3000);
-        // driver.close(); // Close only the last openned tab
-        // driver.quit(); // Close the entire browser
+        Thread.sleep(3000);
+        driver.close(); // Close only the last openned tab
+        driver.quit(); // Close the entire browser
+
+        
 
     }
 
