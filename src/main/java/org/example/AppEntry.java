@@ -40,8 +40,8 @@ public class AppEntry {
      * is `com/mycomp/myproj`.
      *
      * @param who
-     *      request query parameter to specify the hello target.
-     *      default value is `World`.
+     *            request query parameter to specify the hello target.
+     *            default value is `World`.
      */
     @GetAction
     public void home(@DefaultValue("World") @Output String who) {
