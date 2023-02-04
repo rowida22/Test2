@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.apache.commons.io.FileUtils;
@@ -30,7 +31,7 @@ public class test {
         driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
-        // driver.get("https://google.com/");
+        driver.get("https://google.com/");
         // String firstTab = driver.getWindowHandle(); // Switching
         // driver.navigate().to("https://facebook.com/");
 
@@ -58,10 +59,10 @@ public class test {
         // driver.switchTo().newWindow(WindowType.TAB);
         // driver.switchTo().window(firstTab);
 
-        driver.navigate().to("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
-        driver.switchTo().frame("packageFrame");
-        driver.findElement(By.linkText("ActiveSession")).click();
-        driver.switchTo().defaultContent();
+        // driver.navigate().to("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
+        // driver.switchTo().frame("packageFrame");
+        // driver.findElement(By.linkText("ActiveSession")).click();
+        // driver.switchTo().defaultContent();
 
         // driver.manage().window().getSize().getWidth();
         // driver.manage().window().getSize().getHeight();
@@ -82,9 +83,16 @@ public class test {
         // driver.manage().window().setPosition(new Point(100, 100));
         // driver.manage().window().fullscreen();
 
-        /* Get screenshot of testing */
-        File ScreenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(ScreenShot, new File("./image.png"));
+        /* Get screenshot for the whole testing */
+
+        // File ScreenShot = ((TakesScreenshot)
+        // driver).getScreenshotAs(OutputType.FILE);
+        // FileUtils.copyFile(ScreenShot, new File("./image.png"));
+
+        /* Taking a screenshot for Particular element lnXdpd */
+        WebElement element = driver.findElement(By.cssSelector(".lnXdpd"));
+        File ScreenShot2 = element.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(ScreenShot2, new File("./img2.png"));
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
