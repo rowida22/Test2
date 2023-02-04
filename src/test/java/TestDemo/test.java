@@ -57,20 +57,19 @@ public class test {
         driver.findElement(By.linkText("ActiveSession")).click();
         driver.switchTo().defaultContent();
 
-        driver.manage().window().getSize().getWidth();
-        driver.manage().window().getSize().getHeight();
+        // driver.manage().window().getSize().getWidth();
+        // driver.manage().window().getSize().getHeight();
 
-        Dimension size = driver.manage().window().getSize();
-        System.out.println(size.getHeight());
-        System.out.println(size.getWidth());
+        // Dimension size = driver.manage().window().getSize();
+        // System.out.println(size.getHeight());
+        // System.out.println(size.getWidth());
 
 
+        driver.manage().window().setSize(new Dimension(800, 600)); // set new dimension
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
-        // driver.quit(); // Close the entire browser
-
-        
+        driver.quit(); // Close the entire browser
 
     }
 
