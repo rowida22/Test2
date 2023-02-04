@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.idealized.Javascript;
 import org.apache.commons.io.FileUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -90,13 +92,20 @@ public class test {
         // FileUtils.copyFile(ScreenShot, new File("./image.png"));
 
         /* Taking a screenshot for Particular element lnXdpd */
-        WebElement element = driver.findElement(By.cssSelector(".lnXdpd"));
-        File ScreenShot2 = element.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(ScreenShot2, new File("./img2.png"));
+
+        // WebElement element = driver.findElement(By.cssSelector(".lnXdpd"));
+        // File ScreenShot2 = element.getScreenshotAs(OutputType.FILE);
+        // FileUtils.copyFile(ScreenShot2, new File("./img2.png"));
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        WebElement button = driver.findElement(By.name("btnI"));
+        js.executeScript("arguments[0].click();", button);
+        js.executeScript("console.log(' HELLO ')"); // Inspect  
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
-        driver.quit(); // Close the entire browser
+        // driver.quit(); // Close the entire browser
 
     }
 
