@@ -2,9 +2,11 @@ package TestDemo;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class test {
@@ -22,7 +24,7 @@ public class test {
         driver.manage().timeouts().scriptTimeout(Duration.ofMinutes(2));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 
-        driver.get("https://google.com/");
+        // driver.get("https://google.com/");
         // String firstTab = driver.getWindowHandle(); // Switching
         // driver.navigate().to("https://facebook.com/");
 
@@ -53,10 +55,20 @@ public class test {
         driver.navigate().to("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
         driver.switchTo().frame("packageFrame");
         driver.findElement(By.linkText("ActiveSession")).click();
+        driver.switchTo().defaultContent();
 
-        Thread.sleep(3000);
-        driver.close(); // Close only the last openned tab
-        driver.quit(); // Close the entire browser
+        driver.manage().window().getSize().getWidth();
+        driver.manage().window().getSize().getHeight();
+
+        Dimension size = driver.manage().window().getSize();
+        System.out.println(size.getHeight());
+        System.out.println(size.getWidth());
+
+
+
+        // Thread.sleep(3000);
+        // driver.close(); // Close only the last openned tab
+        // driver.quit(); // Close the entire browser
 
         
 
