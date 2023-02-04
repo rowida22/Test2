@@ -1,13 +1,15 @@
 package TestDemo;
 
+import java.io.File;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -66,17 +68,19 @@ public class test {
         // System.out.println(size.getHeight());
         // System.out.println(size.getWidth());
 
-
         driver.manage().window().setSize(new Dimension(800, 600)); // set new dimension
 
-        driver.manage().window().getPosition().getX();
-        driver.manage().window().getPosition().getY();
+        // driver.manage().window().getPosition().getX();
+        // driver.manage().window().getPosition().getY();
 
-        Point position = driver.manage().window().getPosition();
-        System.out.println(position.getX());
-        System.out.println(position.getY());
+        // Point position = driver.manage().window().getPosition();
+        // System.out.println(position.getX());
+        // System.out.println(position.getY());
 
+        // driver.manage().window().setPosition(new Point(100, 100));
+        // driver.manage().window().fullscreen();
 
+        File ScreenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
