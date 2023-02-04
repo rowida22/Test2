@@ -1,6 +1,7 @@
 package TestDemo;
 
 import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -10,12 +11,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.apache.commons.io.FileUtils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class test {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, IOException {
         /*
          * Simple openning & close a site with implicit time
          * 
@@ -80,7 +82,9 @@ public class test {
         // driver.manage().window().setPosition(new Point(100, 100));
         // driver.manage().window().fullscreen();
 
+        /* Get screenshot of testing */
         File ScreenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(ScreenShot, new File("./image.png"));
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
