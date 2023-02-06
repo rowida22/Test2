@@ -1,3 +1,4 @@
+/* Passing valid email & password TC_01_LOGIN  */
 package TestLogin;
 
 import org.openqa.selenium.By;
