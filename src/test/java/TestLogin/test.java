@@ -103,16 +103,20 @@ public class test {
         // File ScreenShot2 = element.getScreenshotAs(OutputType.FILE);
         // FileUtils.copyFile(ScreenShot2, new File("./img2.png"));
 
-        /* finding element using Xpath
-         * it also can be find by using console in the inspect => $x("//h1") 
-         * => //tagName[Add the most specified attribute = 'value of attribute'] => findelement(By.xpath("//h1[@id = 'welcome']"))
+        /*
+         * finding element using Xpath
+         * it also can be find by using console in the inspect => $x("//h1")
+         * =>Relative xpath //* or tagName[Add the most specified attribute = 'value of
+         * attribute'] => findelement(By.xpath("//h1[@id = 'welcome']"))
+         * or //*[contains(@class, 'value')] or //*[text() = 'text Value'] 
+         * =>Absolute xpath //html/body/h1 , //html/body/ul[2]/li[2]
+         * 
          */
 
         // JavascriptExecutor js = (JavascriptExecutor) driver;
         // WebElement button = driver.findElement(By.name("btnI"));
         // js.executeScript("arguments[0].click();", button);
         // js.executeScript("console.log(' HELLO ')"); // Inspect
-        
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
