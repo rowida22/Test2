@@ -1,4 +1,4 @@
-package TestDemo;
+package TestLogin;
 
 import java.io.File;
 import java.io.IOException;
@@ -72,7 +72,14 @@ public class test {
         // System.out.println(size.getHeight());
         // System.out.println(size.getWidth());
 
-        driver.manage().window().setSize(new Dimension(800, 600)); // set new dimension
+        // driver.manage().window().setSize(new Dimension(800, 600)); // set new
+        // dimension
+        // Dimension screen = new Dimension(112, 567);
+        // driver.manage().window().setSize(screen);
+
+        /* Get the page source */
+        // String PageSource = driver.getPageSource();
+        // System.out.println("The Page Source is " + PageSource);
 
         // driver.manage().window().getPosition().getX();
         // driver.manage().window().getPosition().getY();
@@ -96,15 +103,14 @@ public class test {
         // File ScreenShot2 = element.getScreenshotAs(OutputType.FILE);
         // FileUtils.copyFile(ScreenShot2, new File("./img2.png"));
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        WebElement button = driver.findElement(By.name("btnI"));
-        js.executeScript("arguments[0].click();", button);
-        js.executeScript("console.log(' HELLO ')"); // Inspect  
+        // JavascriptExecutor js = (JavascriptExecutor) driver;
+        // WebElement button = driver.findElement(By.name("btnI"));
+        // js.executeScript("arguments[0].click();", button);
+        // js.executeScript("console.log(' HELLO ')"); // Inspect
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
-        // driver.quit(); // Close the entire browser
+        driver.quit(); // Close the entire browser
 
     }
 
