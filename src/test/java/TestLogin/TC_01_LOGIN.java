@@ -24,6 +24,8 @@ public class TC_01_LOGIN {
     driver.switchTo().newWindow(WindowType.TAB);
     driver.navigate().to("https://www.facebook.com/");
 
+    /* missing click button and test data */
+
     driver.findElement(By.id("email"));
     driver.findElement(By.id("passContainer"));
     driver.findElement(By.name("login"));

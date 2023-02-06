@@ -103,10 +103,16 @@ public class test {
         // File ScreenShot2 = element.getScreenshotAs(OutputType.FILE);
         // FileUtils.copyFile(ScreenShot2, new File("./img2.png"));
 
+        /* finding element using Xpath
+         * it also can be find by using console in the inspect => $x("//h1") 
+         * => //tagName[Add the most specified attribute = 'value of attribute'] => findelement(By.xpath("//h1[@id = 'welcome']"))
+         */
+
         // JavascriptExecutor js = (JavascriptExecutor) driver;
         // WebElement button = driver.findElement(By.name("btnI"));
         // js.executeScript("arguments[0].click();", button);
         // js.executeScript("console.log(' HELLO ')"); // Inspect
+        
 
         // Thread.sleep(3000);
         // driver.close(); // Close only the last openned tab
