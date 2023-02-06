@@ -15,7 +15,6 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.idealized.Javascript;
 import org.apache.commons.io.FileUtils;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class test {
