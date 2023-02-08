@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -24,10 +25,11 @@ public class TC_03_LOGIN {
     driver.switchTo().newWindow(WindowType.TAB);
     driver.navigate().to("https://www.facebook.com/");
 
-    driver.findElement(By.name("email")).sendKeys("noha@gmail.com");
-    driver.findElement(By.name("pass")).sendKeys("tetsgfuij");
-    driver.findElement(By.id("loginbutton")).click();
-    driver.findElement(By.className("._9ay7")).getText();
+    driver.findElement(By.name("email")).sendKeys("gerytreg");
+    driver.findElement(By.name("pass")).sendKeys("");
+    driver.findElement(By.name("login")).click();
+    WebElement ErrorMsg = driver.findElement(By.className("_9ay7"));
+    System.out.println(ErrorMsg.getText());
 
     File Timg = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     FileUtils.copyFile(Timg, new File("I:\\Test2\\Test2\\ScreenShots\\img3.png"));
