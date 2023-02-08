@@ -108,9 +108,16 @@ public class test {
          * it also can be find by using console in the inspect => $x("//h1")
          * =>Relative xpath //* or tagName[Add the most specified attribute = 'value of
          * attribute'] => findelement(By.xpath("//h1[@id = 'welcome']"))
-         * or //*[contains(@class, 'value')] or //*[text() = 'text Value'] 
+         * or //*[contains(@class, 'value')] or //*[text() = 'text Value']
          * =>Absolute xpath //html/body/h1 , //html/body/ul[2]/li[2]
-         * 
+         */
+
+        /*
+         * finding element using cssSelector
+         * if it id using #id if it className using .classNamein console $( ) and also
+         * can use [attribute = value] , if it class inside class
+         * By.cssSelector(".Pclass .Childclass")
+         * (".classname li:nth-of-type(1)")
          */
 
         // JavascriptExecutor js = (JavascriptExecutor) driver;

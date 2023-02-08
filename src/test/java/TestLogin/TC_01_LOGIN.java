@@ -24,11 +24,9 @@ public class TC_01_LOGIN {
     driver.switchTo().newWindow(WindowType.TAB);
     driver.navigate().to("https://www.facebook.com/");
 
-    /* missing click button and test data */
-
-    driver.findElement(By.id("email"));
-    driver.findElement(By.id("passContainer"));
-    driver.findElement(By.name("login"));
+    driver.findElement(By.id("email")).sendKeys("laila@gmail.com");
+    driver.findElement(By.id("pass")).sendKeys("test1234");
+    driver.findElement(By.name("login")).click();
 
     File Fimg = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     FileUtils.copyFile(Fimg, new File("I:\\Test2\\Test2\\ScreenShots\\img1.png"));
