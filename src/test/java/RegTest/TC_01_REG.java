@@ -1,3 +1,4 @@
+/* Registration form with valid data TC_01_REG  */
 package RegTest;
 
 import java.io.File;
@@ -22,21 +23,20 @@ public class TC_01_REG {
     driver.manage().window().maximize();
     driver.get("https://www.google.com/");
     driver.switchTo().newWindow(WindowType.TAB);
-    driver.navigate().to("https://www.facebook.com/");
+    driver.navigate().to("https://www.facebook.com/signup");
 
-    driver.findElement(By.id("u_0_0_LE")).click();
-    // driver.findElement(By.name("firstname")).sendKeys("soha");
-    // driver.findElement(By.name("lastname")).sendKeys("ahmed");
-    // driver.findElement(By.name("reg_email__")).sendKeys("sohaahmed23@gmail.com");
-    // driver.findElement(By.id("password_step_input")).sendKeys("blahbalsh1234");
-    // // missing 2 featuers Date and gender
-    // driver.findElement(By.id("u_8_s_qH")).click();
+    driver.findElement(By.name("firstname")).sendKeys("walaa");
+    driver.findElement(By.name("lastname")).sendKeys("othman");
+    driver.findElement(By.name("reg_email__")).sendKeys("walaOthman@gmail.com");
+    driver.findElement(By.cssSelector("[name='reg_email_confirmation__']")).sendKeys("walaOthman@gmail.com");
+    
+    driver.findElement(By.cssSelector("[id='password_step_input']")).sendKeys("olabakdjkh123");
 
     // File R1img = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     // FileUtils.copyFile(R1img, new
     // File("I:\\Test2\\Test2\\ScreenShots\\R1img.png"));
 
-    driver.quit();
+    // driver.quit();
 
   }
 
