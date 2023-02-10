@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec96dc99-5b58-4e12-832b-9d06eb9cc52a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pack.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_dev.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_prod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf/cron.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf/prod/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf/test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf/uat/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/example/.version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/rythm/org/example/AppEntry/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDemo/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/scenarios.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegTest/TC_01_REG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegTest/TC_01_REG.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +37,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2L0tYhTxgxGbfBPj4DYveJGWF1s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,22 +45,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/3M/.m2/repository/org/jetbrains/annotations/16.0.2",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/3M/.m2/repository/org/jetbrains/annotations/16.0.2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="page" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TC_01_REG">
+    <configuration name="TC_01_REG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegTest" />
+      <option name="MAIN_CLASS_NAME" value="RegTest.TC_01_REG" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_01_REG.WelcomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegTest" />
+      <option name="MAIN_CLASS_NAME" value="RegTest.TC_01_REG" />
+      <option name="METHOD_NAME" value="WelcomePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TC_01_REG" />
+        <item itemvalue="JUnit.TC_01_REG.WelcomePage" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\3M\AppData\Roaming\Subversion</configuration>
